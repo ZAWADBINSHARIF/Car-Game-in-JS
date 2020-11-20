@@ -1,0 +1,92 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background-color: rebeccapurple;
+}
+
+.hide{
+    display: none;
+}
+
+.car, .enemyCar{
+    width: 50px;
+    height: 90px;
+    position: absolute;
+    left: 50px;
+    bottom: 200px;
+    z-index: 1;
+    background-image: url(./01.png);
+    /* background-color: blueviolet; */
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.gameArea{
+    background-color: rgb(27, 27, 29);
+    height: 100vh;
+    width: 600px;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+    margin: auto;
+    border-left: 7px dashed white;
+    border-right: 7px dashed white;
+}
+
+.lines{
+    background-color: white;
+    width: 15px;
+    height: 160px;
+    position: absolute;
+}
+
+.scoreBord{
+    color: white;
+    background-color: cornflowerblue;
+    text-align: center;
+    position: absolute;
+    top: 24px;
+    left: 16px;
+    font-size: 1.5rem;
+    /* height: 50px; */
+    width: 300px;
+    box-shadow: 0 5px 5px black;
+    line-height: 60px;
+}
+
+.CarSpeed{
+    color: white;
+    background-color: cornflowerblue;
+    text-align: center;
+    position: absolute;
+    top: 24px;
+    right: 16px;
+    font-size: 1.5rem;
+    /* height: 50px; */
+    width: 300px;
+    box-shadow: 0 5px 5px black;
+    line-height: 60px;
+}
+
+.Menu{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    background-color: cornflowerblue;
+    box-shadow: 0 5px 5px black;
+    width: 600px;
+    line-height: 70px;
+    font-size: 1.5rem;
+    text-align: center;
+    z-index: 2;
+}
+
+#lastScore{
+    color: white;
+    font-size: 1.5rem;
+}
