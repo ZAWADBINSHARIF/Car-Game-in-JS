@@ -188,13 +188,15 @@ function start() {
 
         let enemyCarYgap = ((y+1) * 200) * -1
 
+        let enemyCarColor = Math.floor( Math.random() * (4 - 1 + 1) ) + 1
+
         let enemyCar = document.createElement('div');
         enemyCar.setAttribute('class', 'enemyCar');
 
         enemyCar.y = enemyCarYgap
         enemyCar.style.top = enemyCar.y + 'px'
         enemyCar.style.left = Math.floor((Math.random() * 550)) + 'px'
-        enemyCar.style.backgroundImage = 'url(./02.png)'
+        enemyCar.style.backgroundImage = `url(./0${enemyCarColor}.png)`
 
         gameArea.appendChild(enemyCar)
     }
